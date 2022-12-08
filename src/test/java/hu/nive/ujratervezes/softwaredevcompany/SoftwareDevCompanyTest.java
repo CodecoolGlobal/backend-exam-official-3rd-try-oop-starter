@@ -1,3 +1,5 @@
+package hu.nive.ujratervezes.softwaredevcompany;
+
 import hu.nive.ujratervezes.softwaredevcompany.Company;
 import hu.nive.ujratervezes.softwaredevcompany.Developer;
 import hu.nive.ujratervezes.softwaredevcompany.Manager;
@@ -8,9 +10,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-public class softwareDevCompanyTest {
+public class SoftwareDevCompanyTest {
 
     @Test
     void test_developerMotivatedByDefault(){

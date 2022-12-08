@@ -34,7 +34,7 @@ A metodus futásakor a manager tapasztalati szintje nőjjön `1`-el és a param�
 
 ### hu.nive.ujratervezes.softwaredevcompany.Company
 Tárolni tudja a dolgozoi listáját amit a konstruktora paramétereként kap meg.
-Meghívható minden cégen a `int companyExperience()` metódus ami `int`-ként vissza adja a cég dolgozoinak együttes tapasztalatát, vagyis az egyes dolgozok tapasztalatának összegét.
+Meghívható minden cégen a `int companyExperience()` metódus ami `int`-ként vissza adja a cég dolgozoinak együttes tapasztalatát, vagyis az egyes dolgozók tapasztalatának összegét.
 
 ## Test-ek
 ```java
