@@ -11,30 +11,30 @@ Implementáld az alábbi leírás szerinti programot:
 
 ### hu.nive.ujratervezes.softwaredevcompany.Worker
 tulajdonságai:
-- `int experience` megadja hogy mennyire tapasztalt a munkájában. Konstruktor segítségével beálítható kell legyen minden munkaválalónál.
+- `int experience` megadja, hogy mennyire tapasztalt a munkájában. Konstruktor segítségével beállítható kell legyen minden munkavállalónál.
 Tartozik hozzá setter `void setExperience(int experience)` és getter `int getExperience()`.
-- `boolean isBored` megadja hogy a munkaválaló megunta e a munkahelyét. Ha `false` akkor a munkaválaló motivált. 
-Konstruktor segítségével nem állítható, minden munkaválaló motiváltan jöjjön létre.
+- `boolean isBored` megadja hogy a munkavállaló megunta-e a munkahelyét. Ha `false` akkor a munkavállaló motivált. 
+Konstruktor segítségével nem állítható, minden munkavállaló motiváltan jöjjön létre.
 Tartozik hozzá setter `void setBored(boolean bored)`, getter `boolean isBored()`.
 
 Minden workeren meghívható kell legyen egy `void doWork(boolean isBoring)`
-A metodus paramétere, hogy az elvégzendő munka unalmas e.
-Amennyiben a munkaválaló motivált a metodus futásakor munkát fog végezni. Ha az elvégzendő munka unalmas akkor a munka elvégzése után a munkaválaló motivációját elveszti további munka elvégzésére.
-Unalmas munka elvégzése esetén a munkaválaló tapasztalata `1`-el nő, míg ha a munka nem unalmas `2`-vel.
+A metódus paramétere, hogy az elvégzendő munka unalmas-e.
+Amennyiben a munkavállaló motivált a metodus futásakor munkát fog végezni. Ha az elvégzendő munka unalmas akkor a munka elvégzése után a munkavállaló motivációját elveszti további munka elvégzésére.
+Unalmas munka elvégzése esetén a munkavállaló tapasztalata `1`-el nő, míg ha a munka nem unalmas `2`-vel.
 
-A munkaválalóknak két fajtája van `hu.nive.ujratervezes.softwaredevcompany.Developer` vagyis fejlesztő és `hu.nive.ujratervezes.softwaredevcompany.Manager`.
+A munkavállalóknak két fajtája van `hu.nive.ujratervezes.softwaredevcompany.Developer` vagyis fejlesztő és `hu.nive.ujratervezes.softwaredevcompany.Manager`.
 
 ### hu.nive.ujratervezes.softwaredevcompany.Developer
 Meghívható minden fejlesztőn a `void doPairProgramming(hu.nive.ujratervezes.softwaredevcompany.Developer otherDeveloper)` metodus. A metodus futásakor a fejlesztők pair programingoznak. Ezt végrehajtják motiváltságuktol függetlenül. 
 Ilyenkor mindkét fejlesztő tapasztalata `1`-el nő.
 
 ### hu.nive.ujratervezes.softwaredevcompany.Manager
-Meghívható minden manageren a `void motivateWorker(hu.nive.ujratervezes.softwaredevcompany.Worker worker)` metodus. Ennek hatására a manager motiválni fogja a paraméterben megadott munkaválalót függetlenül attol, hogy a manager motivált e.
-A metodus futásakor a manager tapasztalati szintje nőjjön `1`-el és a paraméterben megadott munkaválaló váljon motiváltá ha eddig nem volt az.
+Meghívható minden manageren a `void motivateWorker(hu.nive.ujratervezes.softwaredevcompany.Worker worker)` metodus. Ennek hatására a manager motiválni fogja a paraméterben megadott munkavállalót függetlenül attol, hogy a manager motivált e.
+A metodus futásakor a manager tapasztalati szintje nőjjön `1`-el és a paraméterben megadott munkavállaló váljon motiváltá ha eddig nem volt az.
 
 ### hu.nive.ujratervezes.softwaredevcompany.Company
 Tárolni tudja a dolgozoi listáját amit a konstruktora paramétereként kap meg.
-Meghívható minden cégen a `int companyExperience()` metódus ami `int`-ként vissza adja a cég dolgozoinak együtes tapasztalatát, vagyis az egyes dolgozok tapasztalatának összegét.
+Meghívható minden cégen a `int companyExperience()` metódus ami `int`-ként vissza adja a cég dolgozoinak együttes tapasztalatát, vagyis az egyes dolgozok tapasztalatának összegét.
 
 ## Test-ek
 ```java
